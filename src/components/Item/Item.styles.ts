@@ -7,13 +7,14 @@ export const Container = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
-  border: 2px solid #2C76EE;
+  border: 2px solid rgba(27,168,97,1);
   border-radius: 10px;
   box-shadow: -1px 0px 5px 0px rgba(0,0,0,0.71);
 
   button {
     border-radius: 3px;
-    background-color: #1953E6;
+    background: rgb(60,199,129);
+    background: linear-gradient(180deg, rgba(60,199,129,1) 0%, rgba(27,168,97,1) 70%);
     color: black;
     font-weight: bold;
     border: none;
@@ -22,7 +23,7 @@ export const Container = styled.div`
   }
   button:hover
   {
-    background-color: #2C76EE;
+    opacity: .7;
     transition: 0.8s;
   }
 
@@ -51,9 +52,36 @@ export const Container = styled.div`
   }
   div p
   {
-    text-overflow: Ellipsis; /* will make [...] at the end */
-    width: 320px; /* change to your preferences */
+    text-overflow: Ellipsis; 
+    width: 300px; 
     height: 50px;
-    overflow:hidden; /* older browsers */
+    overflow:hidden; 
+  }
+
+  @media screen and (max-width: 1240px)
+  {
+    div p
+    {
+      width: 200px; 
+
+    }
+  }
+
+  @media screen and (max-width: 500px)
+  {
+    img {
+      height: 80px;
+    }
+    button {
+      width: 90%;
+    }
+    div h3
+    {
+      width: 100px; 
+    }
+    div p
+    {
+      display: none;
+    }
   }
 `;

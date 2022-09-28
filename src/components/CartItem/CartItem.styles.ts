@@ -29,7 +29,8 @@ export const Container = styled.div`
   button
   {
     width: 60px;
-    background-color: #1953E6;
+    background: rgb(60,199,129);
+    background: linear-gradient(180deg, rgba(60,199,129,1) 0%, rgba(27,168,97,1) 70%);
     font-size: 20px;
     border: none;
     border-radius: 5px;

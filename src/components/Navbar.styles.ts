@@ -34,6 +34,10 @@ export const Container = styled.div`
       color: #000;
       text-decoration: none;
     }
+    ul a::selection
+    {
+      text-decoration: underline;
+    }
 
     .other
     {
@@ -60,7 +64,7 @@ export const Container = styled.div`
     .logo *, .menu *
     {
       font-size: 48px;
-      color: #2C76EE;
+      color: rgb(60, 199, 129);
       cursor: pointer;
     }
 
